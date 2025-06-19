@@ -12,7 +12,7 @@ gsap.registerPlugin(ScrollTrigger);
 interface CardType {
   title: string;
   description: string;
-  logo: any;
+  logo:  React.ReactNode;
 }
 
 const cards: CardType[] = [
