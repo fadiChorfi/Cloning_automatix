@@ -1,12 +1,12 @@
 "use client";
 import gsap from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger"; 
+import ScrollTrigger from "gsap/ScrollTrigger";
 import React, { useEffect, useRef } from "react";
 import LearnMoreButton from "./LeanMoreButton";
 import SplitType from "split-type";
 import ServiceScroll from "./ServiceScroll";
 
-gsap.registerPlugin(ScrollTrigger); 
+gsap.registerPlugin(ScrollTrigger);
 
 const Header = () => {
   const h1Ref = useRef(null);
@@ -32,7 +32,7 @@ const Header = () => {
             start: "top 80%",
             toggleActions: "play none none none",
           },
-        }
+        },
       );
     }
 
@@ -50,11 +50,11 @@ const Header = () => {
           ease: "power2.out",
           stagger: 0.2,
           scrollTrigger: {
-            trigger: h3Ref.current, 
+            trigger: h3Ref.current,
             start: "top 80%",
             toggleActions: "play none none none",
           },
-        }
+        },
       );
     }
 
@@ -73,23 +73,16 @@ const Header = () => {
           y: 0,
           filter: "blur(0px)",
           scrollTrigger: {
-            trigger: buttonRef.current, 
+            trigger: buttonRef.current,
             start: "top 80%",
             toggleActions: "play none none none",
           },
-        }
+        },
       );
     }
   }, []);
 
-  const images = [
-    { src: "/image1.jpg", alt: "Image 1" },
-    { src: "/image2.jpg", alt: "Image 2" },
-    { src: "/image3.jpg", alt: "Image 3" },
-    { src: "/image4.jpg", alt: "Image 4" },
-    { src: "/image5.jpg", alt: "Image 5" },
-    { src: "/image6.jpg", alt: "Image 6" },
-  ];
+ 
 
   return (
     <div className="header min-h-[100vh] text-white text-4xl mt-14">
@@ -115,7 +108,6 @@ const Header = () => {
         <div className="mt-28">
           <ServiceScroll />
         </div>
-        
       </div>
     </div>
   );

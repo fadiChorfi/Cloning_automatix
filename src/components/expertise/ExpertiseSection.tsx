@@ -12,7 +12,7 @@ gsap.registerPlugin(ScrollTrigger);
 interface CardType {
   title: string;
   description: string;
-  logo:  React.ReactNode;
+  logo: React.ReactNode;
 }
 
 const cards: CardType[] = [
@@ -41,7 +41,7 @@ const ExpertiseSection = () => {
 
   useEffect(() => {
     const elements = gsap.utils.toArray(".animate-child") as HTMLElement[];
-  
+
     gsap.fromTo(
       elements,
       {
@@ -55,23 +55,20 @@ const ExpertiseSection = () => {
         filter: "blur(0px)",
         duration: 1,
         ease: "power2.out",
-        stagger: 0.2, 
+        stagger: 0.2,
         scrollTrigger: {
           trigger: containerRef.current,
           start: "top 80%",
           toggleActions: "play none none none",
         },
-      }
+      },
     );
   }, []);
-  
 
   return (
     <div className="min-h-[100vh] min-w-full bg-[#050505] text-white/55 text-4xl  py-24">
       <div className="flex flex-col gap-11" ref={containerRef}>
-        <div className="animate-child bg-gradient-to-b from-[#252525] to-[#0b0b0b] rounded-full p-[1px] w-fit m-auto"
-          
-        >
+        <div className="animate-child bg-gradient-to-b from-[#252525] to-[#0b0b0b] rounded-full p-[1px] w-fit m-auto">
           <p className="text-[14px] font-400 border-1 border-transparent bg-[#050505] rounded-full py-1.5 px-5 w-fit">
             Why Us
           </p>

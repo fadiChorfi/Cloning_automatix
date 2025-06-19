@@ -37,7 +37,7 @@ const ServiceScroll = () => {
             start: "bottom 80%",
             toggleActions: "play none none none",
           },
-        }
+        },
       );
     }
 
@@ -57,7 +57,7 @@ const ServiceScroll = () => {
           duration: 2.5,
           ease: "linear",
           stagger: 0.2,
-        }
+        },
       );
     }
   }, []);

@@ -2,7 +2,6 @@
 import Image from "next/image";
 import React from "react";
 import PageItems from "./PageItems";
-import { Button } from "../ui/button";
 
 import LetsTalkButton from "./LetsTalk";
 
@@ -17,7 +16,10 @@ const FloatingNav = () => {
       <div className="flex gap-4">
         <ul className="flex items-center gap-4 cursor-pointer">
           {navelements.map((item, index) => (
-            <li className="text-white/55 hover:text-white/100  font-sans text-[16px]" key={index}>
+            <li
+              className="text-white/55 hover:text-white/100  font-sans text-[16px]"
+              key={index}
+            >
               {item}
             </li>
           ))}

@@ -2,9 +2,6 @@
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import React, { useEffect, useRef } from "react";
-import Like from "../animationIcons/Like";
-import People from "../animationIcons/People";
-import Brain from "../animationIcons/Brain";
 import BookNow from "./BookNow";
 import SplitType from "split-type";
 
@@ -123,12 +120,12 @@ const Missions = () => {
             <span className="text-[#f9882a] ">Automation.</span>
           </h1>
           <p
-            className="text-white text-[1.25rem] font-sans w-[44rem]  text-center pt-8 "
+            className="text-white text-[1.25rem] font-sans w-[44rem] text-center pt-8"
             ref={pref}
           >
-            First impressions matter. That's why our mission is to create clean,
-            enduring designs that elevate. First impressions matter. That's why
-            our mission.
+            First impressions matter. That&apos;s why our mission is to create
+            clean and enduring designs that elevate. First impressions matter.
+            That&apos;s why our mission.
           </p>
         </div>
 

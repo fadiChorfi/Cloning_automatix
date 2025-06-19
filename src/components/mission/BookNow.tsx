@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useRef } from "react";
+import {  useRef } from "react";
 import anime from "animejs";
 import Image from "next/image";
 import { Button } from "../ui/button";

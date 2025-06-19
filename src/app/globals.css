@@ -84,7 +84,6 @@ body::before {
   --sidebar-ring: oklch(0.556 0 0);
 }
 
-
 .wrapper {
   margin: auto;
   width: 75%;
